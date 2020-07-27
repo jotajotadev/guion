@@ -6,63 +6,85 @@
   <meta name="description" content="Esta página busca normalizar las habilidades de los profesionales en la tecnologia">
   <meta name="keywords" content="normalizar, skills, tecnologia">
   <title>Guion | Normalizando skills en Tecnologia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- 
+    font-family: 'Roboto', sans-serif;
+    font-weight 400 to 700
+  -->
+
 </head>
 <body>
   <header class="header">
-    <a href="#" class="header__home">
-      <img src="" alt="logo" class="header__logo">
-    </a>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__list-item">
-          <a href="" class="header__list-link">Inicio</a>
-        </li>
-        <li class="header__list-item">
-          <a href="" class="header__list-link">Feedback</a>
-        </li>
-        <li class="header__list-item">
-          <a href="" class="header__list-link">Acerca de</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrap-left">
+      <a href="#" class="header__home">
+        <img src="img/logo.png" alt="logo" class="header__logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="index.html" class="header__list-link">Inicio</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Feedback</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <a href="" class="header__button">
       Cat 
-      <i>v</i>
+      <i class="fas fa-caret-down"></i>
     </a>
   </header>
 
   <div class="banner">
-    <h2 class="title">
-      Normalizacion de las habilidades
-      de los profesionales.
-    </h2>
-    <a href="" class="button">
-      Feedback
-    </a>
+    <div class="banner__wrap-left">
+      <h2 class="title title--banner">
+        Normalizacion de las habilidades
+        de los profesionales.
+      </h2>
+      <a href="" class="button">
+        Feedback
+      </a>
+    </div>
+    <img src="img/graficos.png" alt="" class="banner__image">
   </div>
 
   <main class="container">
     <div class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item">
-          <a href="" class="main-nav__list-link">Diseño</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="" class="main-nav__list-link">Desarrollo</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="" class="main-nav__list-link">Marketing</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrap-left">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="" class="main-nav__list-link">Diseño</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="" class="main-nav__list-link">Desarrollo</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="" class="main-nav__list-link">Marketing</a>
+          </li>
+        </ul>
+  
+        <form action="" class="main-nav__search">
+          <input type="search" class="main-nav__search-input" placeholder="busca por nombre">
+          <i class="fas fa-search main-nav__search-ico"></i>
+        </form>
+      </div>
 
-      <form action="" class="form-search">
-        <input type="search" class="form-search__input-search">
-        <i class="icon circle-icon">o</i>
-      </form>
-
-      <div class="skills-details">
-        <i class="icon">o<span>Requerido</span></i>
-        <i class="icon">p <span>Opcional</span></i>
+      <div class="main-nav__skills">
+        <span class="main-nav__skills-details">
+          <i class="fas fa-check-circle main-nav__skills-ico"></i>
+          Requerido
+        </span>
+        <span class="main-nav__skills-details">
+          <i class="fas fa-check-circle main-nav__skills-ico"></i>
+          Opcional
+        </span>
       </div>
     </div>
 
@@ -102,7 +124,7 @@
         <p class="feedback__description ">puedes dar tu feedback en los issues de github.</p>
       </div>
       <div class="container-github">
-        <i class="container-github__icon">o</i>
+        <i class="fab fa-github"></i>
         <a href="" class="button">ir a Github</a>
       </div>
     </article>
