@@ -221,7 +221,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .container-cards::-webkit-scrollbar {
@@ -313,5 +313,54 @@ body {
 
 .card:nth-child(6) .card__header {
   background-color: #0BA6C8;
+}
+
+.feedback {
+  margin-bottom: 4rem;
+  color: #fff;
+  padding: 4rem 2rem;
+  background-color: #414141;
+}
+
+.feedback__container-github {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__ico {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.feedback .title--feedback {
+  margin-top: 0;
+}
+
+.footer {
+  color: #fff;
+  background-color: #6F41EB;
+  padding: 4rem 2rem;
+}
+
+.footer__item-title {
+  font-weight: 700;
+}
+
+.footer__item-list {
+  font-size: 0.75rem;
+  padding-left: 1rem;
+}
+
+.footer__item-link {
+  color: inherit;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

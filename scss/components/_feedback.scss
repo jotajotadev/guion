@@ -1,0 +1,18 @@
+.feedback {
+  margin-bottom: 4rem;
+  color: #fff;
+  padding: 4rem 2rem;
+  background-color: $second;
+  &__container-github {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  &__ico {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .title--feedback {
+    margin-top: 0;
+  }
+}
