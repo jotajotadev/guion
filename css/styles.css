@@ -1,3 +1,9 @@
+/*
+  START Breackpoints
+*/
+/*
+  END Breackpoints
+*/
 *,
 *::before,
 *::after {
@@ -41,6 +47,7 @@ body {
   height: 87px;
   padding-left: 2rem;
   padding-right: 2rem;
+  /*Media queries*/
 }
 
 .header__wrap-left {
@@ -57,9 +64,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
 }
 
@@ -89,9 +93,18 @@ body {
   margin-left: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .banner {
   background-color: #414141;
   padding: 4rem 2rem;
+  /*Media queries*/
 }
 
 .banner .title--banner {
@@ -106,6 +119,27 @@ body {
 .banner__image {
   max-width: 100%;
   margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner__wrap-left {
+    width: 50%;
+    padding-right: 2rem;
+  }
+  .banner__image {
+    margin-top: 0;
+  }
 }
 
 .main-nav {
@@ -124,6 +158,7 @@ body {
           align-items: center;
   padding: 1.5rem 2rem;
   margin-bottom: 4rem;
+  /*Media queries*/
 }
 
 .main-nav__wrap-left {
@@ -161,7 +196,9 @@ body {
 }
 
 .main-nav__wrap-left {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .main-nav__search-input {
@@ -215,6 +252,27 @@ body {
   color: gray;
 }
 
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-nav__wrap-left {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-nav__skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .container-cards {
   overflow-x: scroll;
   padding-left: 2rem;
@@ -222,10 +280,22 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 4rem;
+  /*Media queries*/
 }
 
 .container-cards::-webkit-scrollbar {
   width: 0;
+}
+
+@media (min-width: 992px) {
+  .container-cards {
+    padding-right: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 .card {
@@ -238,6 +308,7 @@ body {
   -webkit-box-shadow: 0 5px 5px -2px #aaa;
           box-shadow: 0 5px 5px -2px #aaa;
   overflow: hidden;
+  /*Media queries*/
 }
 
 .card__header {
@@ -276,6 +347,7 @@ body {
 }
 
 .card__content-description, .card__content-title-skills, .card__content-list-skills {
+  line-height: 1.3rem;
   font-size: 0.88rem;
   margin-top: 0;
 }
@@ -286,6 +358,40 @@ body {
 
 .card .button--weight {
   font-size: 0.88rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 300px;
+  }
+  .card__content-description {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    max-width: 900px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1312px) {
+  .card__content, .card__header {
+    padding: 2rem;
+  }
+  .card__content-description, .card__content-title-skills, .card__content-list-skills {
+    line-height: 1.3rem;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .card__header-main-title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .card__header-sub-title {
+    font-size: 0.88rem;
+  }
 }
 
 /* 
@@ -344,10 +450,38 @@ body {
   margin-top: 0;
 }
 
+@media (min-width: 992px) {
+  .feedback {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .feedback__bk-image {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: calc(32.3%);
+    height: 100%;
+    background-image: url("../../img/woman-github.png");
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
 .footer {
   color: #fff;
   background-color: #6F41EB;
   padding: 4rem 2rem;
+  /*Media queries*/
 }
 
 .footer__item-title {
@@ -362,5 +496,20 @@ body {
 .footer__item-link {
   color: inherit;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

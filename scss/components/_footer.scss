@@ -13,4 +13,15 @@
     color: inherit;
     text-decoration: none;
   }
+  /*Media queries*/
+  @media (min-width: $tablet) {
+    & {
+      display: flex;
+      justify-content: center;
+    }
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 }

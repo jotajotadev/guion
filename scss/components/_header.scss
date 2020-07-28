@@ -16,7 +16,6 @@
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
-    display: flex;
     display: none;
   }
   &__list-item {
@@ -40,4 +39,11 @@
   .fa-caret-down {
     margin-left: 0.5rem;
   }
+  /*Media queries*/
+  @media (min-width: $tablet) {
+    &__list {
+      display: flex;
+    }
+  }
+
 }

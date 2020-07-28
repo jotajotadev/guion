@@ -15,4 +15,26 @@
   .title--feedback {
     margin-top: 0;
   }
+  @media (min-width: $mediun) {
+    & {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      justify-items: start;
+      align-items: end;
+    }
+    &__bk-image {
+      right: 0;
+      top: 0;
+      position: absolute;
+      width: calc(32.3%);
+      height: 100%;
+      background-image: url("../../img/woman-github.png");
+      mix-blend-mode: multiply;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+    }
+  }
 }
