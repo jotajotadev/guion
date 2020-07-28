@@ -1,9 +1,6 @@
 .banner {
   background-color: $second;
   padding: 4rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   .title--banner {
     max-width: 476px;
     font-weight: 400;
@@ -11,5 +8,9 @@
     &::first-line {
       font-weight: 700;
     }
+  }
+  &__image {
+    max-width: 100%;
+    margin-top: 2rem;
   }
 }

@@ -11,7 +11,9 @@ body {
 
 .button {
   background-color: #FF8311;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -58,6 +60,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .header__list-item {
@@ -89,15 +92,6 @@ body {
 .banner {
   background-color: #414141;
   padding: 4rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .banner .title--banner {
@@ -107,6 +101,11 @@ body {
 
 .banner .title--banner::first-line {
   font-weight: 700;
+}
+
+.banner__image {
+  max-width: 100%;
+  margin-top: 2rem;
 }
 
 .main-nav {
@@ -123,7 +122,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.7rem 2rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .main-nav__wrap-left {
@@ -140,9 +140,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .main-nav__list-item {
@@ -155,8 +153,21 @@ body {
   color: inherit;
 }
 
+.main-nav__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main-nav__wrap-left {
+  width: 100%;
+}
+
 .main-nav__search-input {
-  margin-left: 1.2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border: 2px solid #FF8311;
   padding: 0.3rem 0.5rem;
   border-radius: 0.3rem;
@@ -187,6 +198,10 @@ body {
   padding: 0.5rem;
 }
 
+.main-nav__skills {
+  display: none;
+}
+
 .main-nav__skills-details {
   margin-left: 1rem;
   font-weight: 700;
@@ -198,5 +213,105 @@ body {
 
 .main-nav__skills-details:last-child .main-nav__skills-ico {
   color: gray;
+}
+
+.container-cards {
+  overflow-x: scroll;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.container-cards::-webkit-scrollbar {
+  width: 0;
+}
+
+.card {
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 236px;
+  background: #fff;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0 5px 5px -2px #aaa;
+          box-shadow: 0 5px 5px -2px #aaa;
+  overflow: hidden;
+}
+
+.card__header {
+  color: #fff;
+  padding: 1rem;
+}
+
+.card__header-main-title {
+  font-size: 1rem;
+  margin: 0.2rem;
+  font-weight: 400;
+}
+
+.card__header-sub-title {
+  font-size: 0.75rem;
+  margin: 0.2rem;
+  font-weight: 400;
+}
+
+.card__content {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.card__content-description {
+  display: none;
+}
+
+.card__content-title-skills {
+  font-weight: 600;
+}
+
+.card__content-list-skills {
+  padding-left: 1rem;
+  list-style: square;
+}
+
+.card__content-description, .card__content-title-skills, .card__content-list-skills {
+  font-size: 0.88rem;
+  margin-top: 0;
+}
+
+.card .button--right {
+  float: right;
+}
+
+.card .button--weight {
+  font-size: 0.88rem;
+}
+
+/* 
+  El codigo de abajo se puede mejorar usando un ciclo en sass.
+*/
+.card:nth-child(1) .card__header {
+  background-color: #367D75;
+}
+
+.card:nth-child(2) .card__header {
+  background-color: #AB2626;
+}
+
+.card:nth-child(3) .card__header {
+  background-color: #690BC8;
+}
+
+.card:nth-child(4) .card__header {
+  background-color: #40367D;
+}
+
+.card:nth-child(5) .card__header {
+  background-color: #18AF67;
+}
+
+.card:nth-child(6) .card__header {
+  background-color: #0BA6C8;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,94 @@
+.container-cards {
+  overflow-x: scroll;
+  padding-left: 2rem;
+  display: flex;
+  padding-bottom: 1rem;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+.card {
+  margin-right: 1rem;
+  flex-shrink: 0;
+  min-width: 236px;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 5px 5px -2px #aaa;
+  overflow: hidden;
+  &__header {
+    color: #fff;
+    padding: 1rem;
+  }
+  &__header-main-title {
+    font-size: 1rem;
+    margin: 0.2rem;
+    font-weight: 400;
+  }
+  &__header-sub-title {
+    font-size: 0.75rem;
+    margin: 0.2rem;
+    font-weight: 400;
+  }
+
+  &__content {
+    padding: 1rem;
+    overflow: hidden;
+  }
+  &__content-description {
+    display: none;
+  }
+  &__content-title-skills {
+    font-weight: 600;
+  }
+  &__content-list-skills {
+    padding-left: 1rem;
+    list-style: square;
+  }
+  &__content-description,
+  &__content-title-skills,
+  &__content-list-skills {
+    font-size: 0.88rem;
+    margin-top: 0;
+  }
+  .button--right {
+    float: right;
+  }
+  .button--weight {
+    font-size: 0.88rem;
+  }
+}
+
+/* 
+  El codigo de abajo se puede mejorar usando un ciclo en sass.
+*/
+
+.card:nth-child(1) {
+  .card__header {
+    background-color: $color1;
+  }
+}
+.card:nth-child(2) {
+  .card__header {
+    background-color: $color2;
+  }
+}
+.card:nth-child(3) {
+  .card__header {
+    background-color: $color3;
+  }
+}
+.card:nth-child(4) {
+  .card__header {
+    background-color: $color4;
+  }
+}
+.card:nth-child(5) {
+  .card__header {
+    background-color: $color5;
+  }
+}
+.card:nth-child(6) {
+  .card__header {
+    background-color: $color6;
+  }
+}
