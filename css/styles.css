@@ -394,8 +394,10 @@ body {
   }
 }
 
-/* 
-  El codigo de abajo se puede mejorar usando un ciclo en sass.
+/*
+El codigo de abajo esta vinculado a _base.scss linea 7-----
+- Pinta el background del header des los items
+puedes agregar mas colores si lo deseas ;)
 */
 .card:nth-child(1) .card__header {
   background-color: #367D75;
@@ -469,7 +471,7 @@ body {
     position: absolute;
     width: calc(32.3%);
     height: 100%;
-    background-image: url("../../img/woman-github.png");
+    background-image: url("../img/woman-github.png");
     mix-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;

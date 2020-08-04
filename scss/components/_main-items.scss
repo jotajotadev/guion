@@ -103,37 +103,18 @@
   }
 }
 
-/* 
-  El codigo de abajo se puede mejorar usando un ciclo en sass.
+
+/*
+El codigo de abajo esta vinculado a _base.scss linea 7-----
+- Pinta el background del header des los items
+puedes agregar mas colores si lo deseas ;)
 */
 
-.card:nth-child(1) {
-  .card__header {
-    background-color: $color1;
+@for $i from 1 through length($background-header) {
+  .card:nth-child(#{$i}) {
+    .card__header {
+      background-color: nth($background-header, $i);
+    }
   }
 }
-.card:nth-child(2) {
-  .card__header {
-    background-color: $color2;
-  }
-}
-.card:nth-child(3) {
-  .card__header {
-    background-color: $color3;
-  }
-}
-.card:nth-child(4) {
-  .card__header {
-    background-color: $color4;
-  }
-}
-.card:nth-child(5) {
-  .card__header {
-    background-color: $color5;
-  }
-}
-.card:nth-child(6) {
-  .card__header {
-    background-color: $color6;
-  }
-}
+
