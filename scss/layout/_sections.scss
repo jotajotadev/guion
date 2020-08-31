@@ -1,0 +1,38 @@
+.main {
+  background-color: $space;
+  margin-bottom: $space-4;
+  .section{
+    padding-left: $space-2;
+    &__main-title {
+      color: $dark;
+      font-size: pxToRem(18);
+    }
+  }
+
+  .card__wrap {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .card {
+    flex-shrink: 0;
+    margin-right: $space-2;
+    padding: $space-1;
+    background-color: $dark;
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    color: $space;
+
+    &__title {
+      font-size: pxToRem(18);
+      margin-top: 0;
+    }
+    &__sub-title {
+      font-size: pxToRem(14);
+    }
+  }
+}

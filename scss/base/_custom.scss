@@ -1,0 +1,18 @@
+// Styles below overwrite the file base/_normalize.scss
+
+body {
+  font-family: $one-font;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+// Styles above overwrite the file base/_normalize.scss
+
+
+
+
+

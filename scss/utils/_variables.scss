@@ -1,0 +1,49 @@
+// Colors
+
+$primary: #2B588C;
+$primary-variant: #4082CF;
+$alert: #BC2A2A;
+$success: #4AAC27;
+$dark-ultra-light: #e6e6e6;
+$space: #FFFFFF;
+$dark: #252525;
+$dark-light: #858585;
+$dark-variant: #424242;
+
+// Tipografia 
+
+$one-font: 'Open Sans', sans-serif;
+
+// font weiht
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+// size fonts
+
+$size-header-1: pxToRem(32);
+$size-header-2: pxToRem(24);
+$size-header-3: pxToRem(18);
+$size-header-4: pxToRem(16);
+$size-header-5: pxToRem(14);
+$size-header-6: pxToRem(12);
+
+$size-txt-normal: pxToRem(16);
+$size-txt-small: pxToRem(14);
+$size-txt-ultra-small: pxToRem(12);
+
+
+// breackpoints
+
+$small: 576px;
+$tablet: 768px;
+$mediun: 992px;
+$large: 1366px;
+
+// spaces
+
+$space-1: 1rem;
+$space-2: 2rem;
+$space-3: 3rem;
+$space-4: 4rem;

@@ -1,0 +1,25 @@
+.hero {
+  background-color: $dark-ultra-light;
+  padding: $space-2;
+  margin-bottom: $space-4;
+
+  &__title {
+    text-align: center;
+    font-size: pxToRem(24);
+  }
+  &__text {
+    text-align: center;
+    font-size: pxToRem(14);
+  }
+  &__image {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__group-text {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

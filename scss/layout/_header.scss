@@ -1,0 +1,27 @@
+.header {
+  background-color: $dark-ultra-light;
+  padding: $space-2;
+  &__logo {
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+  &__search {
+    width: 100%;
+    height: $space-3;
+    border-radius: 8px;
+    border: 1px solid $primary-variant;
+    padding-left: $space-1;
+    padding-right: $space-1;
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 700;
+      color: $dark-light;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

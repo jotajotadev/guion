@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.css">
   <!-- 
     font-family: 'Roboto', sans-serif;
     font-weight 400 to 700
@@ -18,277 +18,98 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__wrap-left">
-      <a href="#" class="header__home">
-        <img src="img/logo.png" alt="logo" class="header__logo">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a href="index.html" class="header__list-link">Inicio</a>
-          </li>
-          <li class="header__list-item">
-            <a href="" class="header__list-link">Feedback</a>
-          </li>
-          <li class="header__list-item">
-            <a href="" class="header__list-link">Acerca de</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <a href="" class="header__button">
-      Cat 
-      <i class="fas fa-caret-down"></i>
+    <a href="" class="header__link">
+      <img src="img/logo.png" alt="" class="header__logo">
     </a>
+
+    <form action="" class="header__form">
+      <input type="search" class="header__search" placeholder="Listo para buscar :)">
+    </form>
   </header>
 
-  <div class="banner">
-    <div class="banner__wrap-left">
-      <h2 class="title title--banner">
-        Normalizacion de las habilidades
-        de los profesionales.
-      </h2>
-      <a href="" class="button">
-        Feedback
-      </a>
+  <div class="hero">
+    <div class="hero__group-text">
+      <h1 class="hero__title">Normalizamos las skills en el área tech</h1>
+      <p class="hero__text">Aqui podras buscar las habilidades que necesita un
+        profesional, para forma parte de tu equipo</p>
     </div>
-    <img src="img/graficos.png" alt="" class="banner__image">
+    <img src="img/graficos.png" alt="" class="hero__image">
   </div>
 
-  <main class="container">
-    <div class="main-nav">
-      <div class="main-nav__wrap-left">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Diseño</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Desarrollo</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Marketing</a>
-          </li>
-        </ul>
-  
-        <form action="" class="main-nav__search">
-          <input type="search" class="main-nav__search-input" placeholder="busca por nombre">
-          <i class="fas fa-search main-nav__search-ico"></i>
-        </form>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__main-title">Front end</h2>
+      
+      <div class="card__wrap">
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
       </div>
-
-      <div class="main-nav__skills">
-        <span class="main-nav__skills-details">
-          <i class="fas fa-check-circle main-nav__skills-ico"></i>
-          Requerido
-        </span>
-        <span class="main-nav__skills-details">
-          <i class="fas fa-check-circle main-nav__skills-ico"></i>
-          Opcional
-        </span>
-      </div>
-    </div>
-
-    <section class="container-cards">
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
-      <article class="card">
-        <header class="card__header">
-          <h2 class="card__header-main-title">Diseñador Gráfico</h2>
-          <h3 class="card__header-sub-title">- junior</h3>
-        </header>
-        <div class="card__content">
-          <p class="card__content-description"><span class="card__content-description-bold">Descripción: </span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <p class="card__content-title-skills">Habilidades</p>
-          <ul class="card__content-list-skills">
-            <li class="card__content-item-skill">
-              Fundamentos de Diseño
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Photoshop
-            </li>
-            <li class="card__content-item-skill">
-              Adobe Illustrator
-            </li>
-          </ul>
-          <a href="" class="button button--right button--weight">
-            Copiar
-          </a>
-        </div>
-      </article>
     </section>
 
-    <article class="feedback">
-      <div class="feedback-container">
-        <h2 class="title title--feedback">
-          Feedback
-        </h2>
-        <p class="feedback__description bold">El feedback es importante, nos ayuda a tener las profesiones actualizadas.</p>
-        <p class="feedback__description ">puedes dar tu feedback en los issues de github.</p>
+    <section class="section">
+      <h2 class="section__main-title">Back end</h2>
+      
+      <div class="card__wrap">
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
       </div>
-      <div class="feedback__container-github">
-        <i class="fab fa-github feedback__ico"></i>
-        <a href="" class="button">ir a Github</a>
-      </div>
-      <div class="feedback__bk-image"></div>
-    </article>
+    </section>
 
+    <section class="section">
+      <h2 class="section__main-title">Diseño</h2>
+      
+      <div class="card__wrap">
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Maquetador web bootstrap</h3>
+          <p class="card__sub-title">- junior</p>
+        </article>
+      </div>
+    </section>
   </main>
 
+
   <footer class="footer">
-    <div class="footer__item">
-      <p class="footer__item-title">Contacto</p>
-      <ul class="footer__item-list">
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">github</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__item">
-      <p class="footer__item-title">Categorias.</p>
-      <ul class="footer__item-list">
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Diseño</a>
-        </li>
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Desarrollo</a>
-        </li>
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Marketing</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__item">
-      <p class="footer__item-title">Páginas</p>
-      <ul class="footer__item-list">
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Inicio</a>
-        </li>
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Feedback</a>
-        </li>
-        <li class="footer__item-li">
-          <a href="" class="footer__item-link">Acerca de</a>
-        </li>
-      </ul>
-    </div>
+    <a href="" class="footer__link">- Visitar la guia de estilos</a>
   </footer>
 </body>
 </html>
