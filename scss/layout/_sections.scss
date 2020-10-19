@@ -1,8 +1,51 @@
 .main {
   background-color: $space;
   margin-bottom: $space-4;
+  .navigation-items {
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    margin-bottom: 3rem;
+    .icon-item{
+      flex-shrink: 0;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      width: 80px;
+      .icon-circle {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 47px;
+        height: 47px;
+        background-color:$success;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .icon-text {
+        font-size: pxToRem(14);
+        text-align: center;
+        font-weight: 700;
+        color: $success;
+      }
+      &:hover .icon-circle{
+        transition: all 400ms ease-in;
+        box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px rgb(134, 21, 125);
+        background-color: rgb(134, 21, 125);
+      }
+      &:hover .icon-text {
+        transition: all 400ms ease-in;
+        color: rgb(134, 21, 125);;
+      }
+    }
+  }
   .section{
     padding-left: $space-2;
+    margin-bottom: 1rem;
     &__main-title {
       color: $dark;
       font-size: pxToRem(18);
@@ -19,7 +62,7 @@
   }
   .card {
     flex-shrink: 0;
-    margin-right: $space-2;
+    margin-right: $space-1;
     padding: $space-1;
     background-color: $dark;
     width: 180px;
