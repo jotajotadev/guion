@@ -1,27 +1,66 @@
 .header {
-  background-color: $dark-ultra-light;
+  background-color: $dark;
+  display: flex;
+  justify-content: space-between;
   padding: $space-2;
+  align-items: center;
   &__logo {
-    display: block;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
+    width: 60px;
   }
-  &__search {
-    width: 100%;
-    height: $space-3;
-    border-radius: 8px;
-    border: 1px solid $primary-variant;
-    padding-left: $space-1;
-    padding-right: $space-1;
-    &::placeholder {
-      font-size: 14px;
-      font-weight: 700;
-      color: $dark-light;
+  &__hamburguer {
+    transition: all 300ms ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    .hamburger-item.one,
+    .hamburger-item.last {
+      border-radius: 10px;
+      width: 21px;
+      height: 5px;
+      background-color: $primary;
     }
-    &:focus {
-      outline: none;
+    .hamburger-item.one,
+    .hamburger-item.middle {
+      margin-bottom: 3px;
+    }
+    .hamburger-item.middle {
+      margin-left: 7px;
+      border-radius: 10px;
+      width: 14px;
+      height: 5px;
+      background-color: $primary;
+    }
+  }
+  &__hamburguer:hover,
+  &__hamburguer:active {
+    transition: all 300ms ease-in;
+    background-color: $primary;
+    position: relative;
+    .hamburger-item.one,
+    .hamburger-item.middle,
+    .hamburger-item.last {
+      background-color: #fff;
+    }
+    .hamburger-item.middle {
+      transition: all 300ms ease-in;
+      display: none;
+    }
+    .hamburger-item.one{
+      transition: all 300ms ease-in;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 19.1px;
+    }
+    .hamburger-item.last{
+      transition: all 300ms ease-in;
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: 15px;
     }
   }
 }

@@ -405,53 +405,103 @@ body {
 }
 
 .header {
-  background-color: #e6e6e6;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
-  display: block;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
+  width: 60px;
 }
 
-.header__search {
-  width: 100%;
-  height: 3rem;
-  border-radius: 8px;
-  border: 1px solid #4082CF;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.header__hamburguer {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 43px;
+  height: 43px;
+  border: 2px solid #2B588C;
+  border-radius: 50%;
 }
 
-.header__search::-webkit-input-placeholder {
-  font-size: 14px;
-  font-weight: 700;
-  color: #858585;
+.header__hamburguer .hamburger-item.one,
+.header__hamburguer .hamburger-item.last {
+  border-radius: 10px;
+  width: 21px;
+  height: 5px;
+  background-color: #2B588C;
 }
 
-.header__search:-ms-input-placeholder {
-  font-size: 14px;
-  font-weight: 700;
-  color: #858585;
+.header__hamburguer .hamburger-item.one,
+.header__hamburguer .hamburger-item.middle {
+  margin-bottom: 3px;
 }
 
-.header__search::-ms-input-placeholder {
-  font-size: 14px;
-  font-weight: 700;
-  color: #858585;
+.header__hamburguer .hamburger-item.middle {
+  margin-left: 7px;
+  border-radius: 10px;
+  width: 14px;
+  height: 5px;
+  background-color: #2B588C;
 }
 
-.header__search::placeholder {
-  font-size: 14px;
-  font-weight: 700;
-  color: #858585;
+.header__hamburguer:hover, .header__hamburguer:active {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  background-color: #2B588C;
+  position: relative;
 }
 
-.header__search:focus {
-  outline: none;
+.header__hamburguer:hover .hamburger-item.one,
+.header__hamburguer:hover .hamburger-item.middle,
+.header__hamburguer:hover .hamburger-item.last, .header__hamburguer:active .hamburger-item.one,
+.header__hamburguer:active .hamburger-item.middle,
+.header__hamburguer:active .hamburger-item.last {
+  background-color: #fff;
+}
+
+.header__hamburguer:hover .hamburger-item.middle, .header__hamburguer:active .hamburger-item.middle {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  display: none;
+}
+
+.header__hamburguer:hover .hamburger-item.one, .header__hamburguer:active .hamburger-item.one {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 19.1px;
+}
+
+.header__hamburguer:hover .hamburger-item.last, .header__hamburguer:active .hamburger-item.last {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  bottom: 15px;
 }
 
 .hero {
