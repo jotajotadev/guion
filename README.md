@@ -1,28 +1,36 @@
 # Proyecto guion
 
-El objetivo principal de esta página es darle solución a un problema muy común, con las propuestas de trabajo que vemos diariamente, y es que “la gran gran  mayoría de las propuestas de trabajo buscan personas que no concuerdan con el perfil que ellos necesitan”.
+El objetivo principal del proyecto guion es normalizar las propuestas de trabajo en el área de la técnologia.
 
-Por ejemplo,  Nos podemos encontrar que en una propuesta de trabajo ocurra lo siguiente
+## Preguntas y Respuestas sobre el proyecto
+---
 
-* SE BUSCA persona con conocimientos en Diseño gráfico, google Ads  y PHP.
-* $100 / mes
+---
+- ### ¿Por qué estamos haciendo esto?
+Es para brindar un estándar para las postulaciones a los trabajos en el área de la tecnología. Gracias a la ayuda de una comunidad de profesionales tech. Son ellos los que debaten sobre qué skills debería tener una postulación.
 
-Lo cual es, completamente erróneo y fuera de contexto, pero lamentablemente ocurre.
+- ### ¿Por qué alguien debería saber que esto existe?
+Por que ayudaría a que los postulantes encuentren un patrón en las postulaciones y no un desorden de diferentes skills.
 
-## ¿Cómo le daremos Solución?
+- ### ¿Para quienes estamos haciendo esto?
+Nuestro público objetivo son los empleadores o las personas que se encargan de recursos humanos en una empresa o startup.
 
-1. Para solucionarlo, se espera el apoyo de la gran comunidad dentro de Github. con su ayuda podremos definir qué conocimientos necesitan ciertos perfiles, el salario aproximado, etc.
-2. Hacer que las empresas conozcan este sitio.
-Aún no se definió este punto, pero hay opciones, como envío de email, otra que cada postulante a un trabajo menciona la página, etc.
+- ### ¿Qué debería esperar nuestro target?
+Encontrar un sitio fácil y accesible del cual puede obtener un estándar en el perfil de cualquier profesional en el área de la tecnología . Como puede ser frontend, back, designer etc.
 
-## ¿Cómo apoyar?
+- ### ¿Qué valor provee al usuario y al negocio?
+Al usuario le provee un solo lugar donde puede encontrar un estándar al perfil de un profesional tech. Y al negocio reconocimiento.
 
-**si quieres dar tu apoyo solo basta con solicitarlo en uno de los issues del proyecto.**
+- ### ¿Cómo mediremos el éxito?
+Con herramientas como optimalsort para mejorar y medir la experiencia de usuario. Y con la cantidad de usuarios que visitan la página a través de google analytics.
 
-### Capturas del proyecto
+- ### ¿Qué es lo realisticamente que podemos hacer?
+En este punto el proyecto es completamente realista. Juntar un grupo de profesionales es posible. Lo dificil seria una vez implementado todo conseguir que nuestro target acceda al producto final.
 
-Desktop version
-![version desktop](img/desktop.jpg)
+- ### ¿ Cómo alcanzamos a nuestro target?
+1._ por medio de una dinámica en la cual participarán todos los profesionales de la comunidad. Con el objetivo de ponerse en contacto con 3 empresas. Ya sea por correo whatsapp etc explicándoles de qué va el proyecto
 
-Mobile version
-![version mobile](img/mobile.jpg)
+2._ con la ayuda de la publicidad. Pero solo si es posible darnos ese lujo .
+
+
+
