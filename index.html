@@ -17,30 +17,35 @@
 
 </head>
 <body>
-  <header class="header">
-    <a href="" class="header__link">
-      <img src="img/logo.svg" alt="" class="header__logo">
-    </a>
-    <div class="header__hamburguer">
-      <div class="hamburger-item one"></div>
-      <div class="hamburger-item middle"></div>
-      <div class="hamburger-item last"></div>
-    </div>
-    <nav class="header__nav">
-      <a href="" class="link-nav"><i class="fas fa-home"></i> Home</a>
-      <a href="" class="link-nav"><i class="fas fa-info-circle"></i> Conocer más</a>
-      <a href="" class="button-ghost">quiero apoyar</a>
-    </nav>
-  </header>
+  <div class="wrap-header">
+    <header class="header">
+      <a href="" class="header__link">
+        <img src="img/logo.svg" alt="" class="header__logo">
+      </a>
+      <div class="header__hamburguer" id="buttonForShowNav">
+        <div class="hamburger-item one"></div>
+        <div class="hamburger-item middle"></div>
+        <div class="hamburger-item last"></div>
+      </div>
+      <nav class="header__nav" id="menu">
+        <a href="" class="link-nav"><i class="fas fa-home"></i> Home</a>
+        <a href="" class="link-nav"><i class="fas fa-info-circle"></i> Conocer más</a>
+        <a href="" class="button-ghost">quiero apoyar</a>
+      </nav>
+    </header>
+  </div>
 
-  <div class="hero">
-    <div class="hero__group-text">
-      <h1 class="hero__title">Normalizamos las habilidades de los profesionales en el área de la técnologia</h1>
-      <p class="hero__text">Podras buscar que habilidades necesita un profesional, para forma parte de tu equipo. </p>
-      <a href="" class="button">ver StoryTime</a>
+  <div class="wrap-hero">
+    <div class="hero">
+      <div class="hero__group-text">
+        <h1 class="hero__title">Normalizamos las habilidades de los profesionales en el área de la técnologia</h1>
+        <p class="hero__text">Podras buscar que habilidades necesita un profesional, para forma parte de tu equipo. </p>
+        <div class="center-buton">
+          <a href="" class="button">ver StoryTime</a>
+        </div>
+      </div>
+      <img src="img/graficos.png" alt="" class="hero__image">
     </div>
-    <img src="img/graficos.png" alt="" class="hero__image">
-    <div class="radius-shape"></div>
   </div>
 
   <main class="main">
@@ -86,68 +91,115 @@
     <section class="section">
       
       <div class="card__wrap">
-        <article class="card">
-          <h3 class="card__title">Frontend Developer</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Frontend Developer</h3>
-          <p class="card__sub-title">- senior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Maquetador Web</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Dev Ops</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
+        <div class="bacground-card">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Frontend Developer</h3>
+              <p class="card__sub-title">- junior</p>
+            </header>
+            <div class="card__body">
+              <p class="card__body-title">Skills</p>
+              <ul class="card__list">
+                <li class="card__list-item">HTML</li>
+                <li class="card__list-item">CSS</li>
+                <li class="card__list-item">Esto es un ejemplo de cuando una habilidad tiene mucho texto</li>
+                <li class="card__list-item">Boostrap o Less</li>
+                <li class="card__list-item">Git (Github Gitlab)</li>              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="" class="button-small">copiar</a>
+              <a href="" class="button-ghost-small">ver más</a>
+            </div>
+          </article>
+        </div>
+        <div class="bacground-card">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Frontend Developer</h3>
+              <p class="card__sub-title">- junior</p>
+            </header>
+            <div class="card__body">
+              <p class="card__body-title">Skills</p>
+              <ul class="card__list">
+                <li class="card__list-item">HTML</li>
+                <li class="card__list-item">CSS</li>
+                <li class="card__list-item">Esto es un ejemplo de cuando una habilidad tiene mucho texto</li>
+                <li class="card__list-item">Boostrap o Less</li>
+                <li class="card__list-item">Git (Github Gitlab)</li>              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="" class="button-small">copiar</a>
+              <a href="" class="button-ghost-small">ver más</a>
+            </div>
+          </article>
+        </div>
+        <div class="bacground-card">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Frontend Developer</h3>
+              <p class="card__sub-title">- junior</p>
+            </header>
+            <div class="card__body">
+              <p class="card__body-title">Skills</p>
+              <ul class="card__list">
+                <li class="card__list-item">HTML</li>
+                <li class="card__list-item">CSS</li>
+                <li class="card__list-item">Esto es un ejemplo de cuando una habilidad tiene mucho texto</li>
+                <li class="card__list-item">Boostrap o Less</li>
+                <li class="card__list-item">Git (Github Gitlab)</li>              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="" class="button-small">copiar</a>
+              <a href="" class="button-ghost-small">ver más</a>
+            </div>
+          </article>
+        </div>
+        <div class="bacground-card">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Frontend Developer</h3>
+              <p class="card__sub-title">- junior</p>
+            </header>
+            <div class="card__body">
+              <p class="card__body-title">Skills</p>
+              <ul class="card__list">
+                <li class="card__list-item">HTML</li>
+                <li class="card__list-item">CSS</li>
+                <li class="card__list-item">Esto es un ejemplo de cuando una habilidad tiene mucho texto</li>
+                <li class="card__list-item">Boostrap o Less</li>
+                <li class="card__list-item">Git (Github Gitlab)</li>              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="" class="button-small">copiar</a>
+              <a href="" class="button-ghost-small">ver más</a>
+            </div>
+          </article>
+        </div>
+        <div class="bacground-card">
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Frontend Developer</h3>
+              <p class="card__sub-title">- junior</p>
+            </header>
+            <div class="card__body">
+              <p class="card__body-title">Skills</p>
+              <ul class="card__list">
+                <li class="card__list-item">HTML</li>
+                <li class="card__list-item">CSS</li>
+                <li class="card__list-item">Esto es un ejemplo de cuando una habilidad tiene mucho texto</li>
+                <li class="card__list-item">Boostrap o Less</li>
+                <li class="card__list-item">Git (Github Gitlab)</li>              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="" class="button-small">copiar</a>
+              <a href="" class="button-ghost-small">ver más</a>
+            </div>
+          </article>
+        </div>
       </div>
+      
     </section>
 
-    <section class="section">
-      
-      <div class="card__wrap">
-        <article class="card">
-          <h3 class="card__title">Backend Developer</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Backend Developer</h3>
-          <p class="card__sub-title">- senior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Diseño UI</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Diseñador UX</h3>
-          <p class="card__sub-title">- senior</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      
-      <div class="card__wrap">
-        <article class="card">
-          <h3 class="card__title">Data Science</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Data Science</h3>
-          <p class="card__sub-title">- senior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Diseñador UX/UI</h3>
-          <p class="card__sub-title">- junior</p>
-        </article>
-        <article class="card">
-          <h3 class="card__title">Diseñador UX/UI</h3>
-          <p class="card__sub-title">- senior</p>
-        </article>
-      </div>
-    </section>
     <divc class="center-button">
       <a href="" class="button-ghost">cargar más contenido</a>
     </div>
@@ -174,5 +226,7 @@
   <footer class="footer">
     <a href="" class="footer__link">Desarrollado con ♥ para el mundo</a>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

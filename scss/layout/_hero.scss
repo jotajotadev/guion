@@ -1,6 +1,13 @@
+.wrap-hero {
+  background-color: $dark;
+
+}
 .hero {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  background-color: $dark-variant;
+  background-color: $dark;
   padding: $space-1;
   padding-bottom: 2rem;
   margin-bottom: $space-4;
@@ -36,5 +43,31 @@
     position: absolute;
     left: 0;
     bottom: 0;
-  } 
+  }
+  @media screen and (min-width: $small){
+    &__title,
+    &__text {
+      text-align: center;
+    }
+    &__group-text {
+      max-width: 450px;
+    }
+    .center-buton {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: $mediun){
+    & {
+      display: flex;
+    }
+    &__title,
+    &__text {
+      text-align: left;
+    }
+    .center-buton {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
